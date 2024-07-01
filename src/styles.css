@@ -1,0 +1,66 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  background-color: #021119;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+canvas#webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+p.text {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  transform: translateX(-55%);
+  color: #e6e6e6;
+  font-size: 19px;
+  font-weight: normal;
+  opacity: 0;
+}
+
+p.text span.count {
+  flex: 0 0 50%;
+  margin-right: 8px;
+  text-align: right;
+}
+
+p.text span.name {
+  flex: 0 0 50%;
+  margin-left: 8px;
+  text-align: left;
+}
+
+.msg {
+  z-index: 9999;
+}
+
+.msg:after {
+  content: "IT'S OVER";
+  position: absolute;
+  color: #D7D7D7;
+  font-size: 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
